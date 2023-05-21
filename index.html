@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+  <div class="bg-gray-800 rounded-lg shadow p-8 max-w-sm w-full">
+    <h1 class="text-3xl font-bold mb-6 text-center">Hangman Game</h1>
+    <div id="wordContainer" class="mb-6">
+      <p id="word" class="text-2xl font-semibold mb-2"></p>
+      <p id="guesses" class="text-lg"></p>
+    </div>
+    <div id="inputContainer" class="flex items-center">
+      <label for="letterInput" class="mr-2">Enter a letter:</label>
+      <input type="text" id="letterInput" maxlength="1" class="p-2 border border-gray-300 rounded-md mr-2 bg-gray-200 text-gray-900 focus:outline-none">
+      <button id="submit" class="py-2 px-4 bg-blue-500 text-white rounded-md">Submit</button>
+    </div>
+  </div>
+  <script src="hangman.js">
+  </script>
+</body>
+</html>
